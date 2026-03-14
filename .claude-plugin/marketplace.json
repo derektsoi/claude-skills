@@ -1,15 +1,18 @@
 {
   "name": "derektsoi-skills",
-  "description": "Claude Code skills for PMs who build with AI — deploy prototypes, share work, and ship faster without engineering support.",
+  "owner": {
+    "name": "Derek Tsoi"
+  },
+  "metadata": {
+    "description": "Claude Code skills for PMs who build with AI",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "netlify-deploy",
       "description": "Deploy HTML prototypes and static files to Netlify for instant shareable URLs. Use when deploying, hosting, or sharing static HTML/CSS/JS files online.",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/derektsoi/claude-skills.git",
-        "path": "skills/netlify-deploy"
-      }
+      "source": "./skills/netlify-deploy",
+      "category": "deployment"
     }
   ]
 }
